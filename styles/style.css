@@ -1,0 +1,126 @@
+:root {
+  --default-margin: 20px auto;
+  --default-padding: 10px 10px 0;
+  --all-sides-margin: 4px;
+}
+
+body {
+  margin: var(--all-sides-margin);
+}
+
+h2 {
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+}
+p {
+  margin: var(--all-sides-margin);
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font: kerning 2px;
+}
+hr {
+  max-width: 60%;
+}
+footer {
+  margin: var(--default-margin);
+  padding: var(--default-padding);
+}
+section {
+  margin: var(--default-margin);
+}
+.about-paragraph,
+.about-me {
+  text-align: left;
+  max-width: 100%;
+  min-width: 60%;
+  line-height: 26px;
+}
+.btn {
+  margin: var(--all-sides-margin);
+}
+
+.button-group {
+  text-align: left;
+}
+
+.card {
+  margin: var(--all-sides-margin);
+}
+.container {
+  margin: var(--default-margin);
+  text-align: center;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.divide_line {
+  display: block;
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form-label {
+  margin: var(--default-margin);
+  text-align: justify;
+}
+.lottieOne {
+  max-height: 100%;
+  display: inline-block;
+  justify-content: center;
+  margin: var(--all-sides-margin);
+}
+.navbar-name,
+.navbar-brand {
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+  margin: var(--all-sides-margin);
+  padding: var(--default-padding);
+}
+.hola {
+  text-align: start;
+  font-family: "Cabin", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  font-style: italic;
+  margin: var(--all-sides-margin);
+}
+.intro {
+  font-family: "Quicksand", sans-serif;
+  font-weight: regular;
+  line-height: 40px;
+  max-width: 640px;
+  text-align: start;
+}
+.col-sm {
+  margin: var(--default-margin);
+}
+
+.emoji {
+  transform: scale(4);
+}
+
+.quote {
+  max-width: 600px;
+}
+
+.focus {
+  text-decoration: none;
+}
+
+.focus:hover {
+  color: #393939;
+  background-size: 0 2px, 100% 2px;
+  text-decoration: none;
+  background-image: linear-gradient(rgb(176, 251, 188), #20958c),
+    linear-gradient(#feb2b2, #feb2b2);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1s linear;
+}
