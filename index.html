@@ -35,6 +35,13 @@ font-family: 'Silkscreen', cursive;-->
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <script type="module">
+  import { createApp } from 'vue'
+  import 'src/app.js'
+
+  createApp(app).mount('#app')
+</script>
     
    
     
@@ -240,7 +247,7 @@ font-family: 'Silkscreen', cursive;-->
     <!--
       // Projects - carousel
             -->
-<div :id="App"></div>
+<div id="app"></div>
             
     <section class="work-carousel" >
       <div class="container">
@@ -293,14 +300,12 @@ font-family: 'Silkscreen', cursive;-->
 
 
 <!--Script-->
-
-<script src="src/App.vue"></script>
+<script src="https://unpkg.com/@vue@latest"></script>
+<script src="src/app.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="src/hello-anima.js"></script>
-<script
-  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
+
+
 
   <script>
 LottieInteractivity.create({
@@ -314,21 +319,6 @@ LottieInteractivity.create({
               ]
             });
   </script>
-<!--
-<script>
-LottieInteractivity.create({
-    player: "#lottieOne",
-    mode:"scroll",
-    actions: [
-        {
-            position: { x: [0, 1], y: [0, 1] },
-            type: "seek",
-            frames: [0, 280]
-        }
-    ]
-});
-</script>
-    -->
     <script>
       function submitForm() {
          alert("Message sent!");
