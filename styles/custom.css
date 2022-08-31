@@ -1,33 +1,49 @@
 #button-primary {
+  color: white;
   background-color: #515fd5;
   border-color: #515fd5;
   border-radius: 16px;
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
 }
 #button-primary:hover {
-  background-color: #419792;
+  color: #515fd5;
+  background-color: white;
   box-shadow: -4px 4px 6px rgb(150, 165, 165);
 }
 
 #button-secondary {
-  background-color: whitesmoke;
+  color: salmon;
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
+  background-color: white;
   border-color: salmon;
   border-radius: 16px;
 }
 #button-secondary:hover {
-  background-color: whitesmoke;
+  background-color: rgb(255, 169, 159);
   box-shadow: -4px 4px 6px rgb(150, 165, 165);
+  color: white;
 }
 
 #a-button-primary {
-  color: whitesmoke;
+  color: white;
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
+}
+#a-button-primary:hover {
+  background-color: white;
+  color: #515fd5;
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
 }
 
 #a-button-secondary {
   color: salmon;
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
+}
+#a-button-secondary:hover {
+  color: white;
 }
 
 #contact-form-btn {
-  color: whitesmoke;
+  color: white;
   background-color: #4ea5a1;
   border-color: #419792;
   border-radius: 16px;

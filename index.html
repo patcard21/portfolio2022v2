@@ -102,18 +102,16 @@ font-family: 'Silkscreen', cursive;-->
           <div class="col-sm">
 
             <div class="lottieOne"> 
-      <lottie-player src="/hello-anima.json" id="lottieOne" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+      <lottie-player src="/hello-anima.json" id="lottieOne" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
             
             </div>
             </div>
-            
-          <br />
-
-          <div class="col-sm hero-hello-txt">
+                      <br />
+          <div class="col-sm d-block text-center text-md-start">
             <h3 class="hola">
              Hi there!
             </h3>
-            <h3 class="intro mx-auto d-grid gap- d-md-block"> I'm Patricia Cardona,
+            <h3 class="intro"> I'm Patricia Cardona,
               a <span class="focus"> UX designer</span> with a
               <span class=" focus"> front-end development</span> skill-set based in sunny
               Puerto Rico ☀️
@@ -123,9 +121,9 @@ font-family: 'Silkscreen', cursive;-->
             -->
             <br/>
             <div class="d-grid gap-2 d-md-block button-group">
-              <button type="button" class="btn" id="button-primary"><a id= a-button-primary class="text-decoration-none" href="#contact-form">Contact me</a></button>
-
-              <button type="button" class="btn" id="button-secondary"><a id=a-button-secondary class="text-decoration-none" href="https://github.com/patcard21" target="_blank">My GitHub</a></button>            </div>
+              <a href="contact-form" target="_blank" id=a-button-primary class="text-decoration-none"></a><button type="button" class="btn" id="button-primary"> Contact me</button></a>
+              <a href="https://github.com/patcard21" target="_blank" id=a-button-secondary class="text-decoration-none" target="_blank"></a><button type="button" class="btn" id="button-secondary"> My GitHub</button></a>
+              </div>
           </div>
             </div>
           </div>
@@ -256,7 +254,7 @@ font-family: 'Silkscreen', cursive;-->
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" id=a-button-secondary class="text-decoration-none" target="_blank"></a><button type="button" class="btn" id="button-secondary"> Go somewhere</button></a>
       </div>
     </div>
   </div>
@@ -265,9 +263,8 @@ font-family: 'Silkscreen', cursive;-->
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-       <button type="button" class="btn" id="button-secondary"> <a href="#" id=a-button-secondary class="text-decoration-none" target="_blank">Go somewhere</a></button>
-    
-      
+       <a href="#" id=a-button-secondary class="text-decoration-none" target="_blank"></a><button type="button" class="btn" id="button-secondary"> Go somewhere</button></a>
+          
       </div>
     </div>
   </div>
@@ -278,7 +275,7 @@ font-family: 'Silkscreen', cursive;-->
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" id=a-button-secondary class="text-decoration-none" target="_blank"></a><button type="button" class="btn" id="button-secondary"> Go somewhere</button></a>
       </div>
     </div>
   </div>
@@ -287,7 +284,7 @@ font-family: 'Silkscreen', cursive;-->
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" id=a-button-secondary class="text-decoration-none" target="_blank"></a><button type="button" class="btn" id="button-secondary"> Go somewhere</button></a>
       </div>
 </div>
           </div>
@@ -319,8 +316,6 @@ font-family: 'Silkscreen', cursive;-->
 <br/>
 <br/>
 
-
-
         </section>
 
 
@@ -344,9 +339,15 @@ font-family: 'Silkscreen', cursive;-->
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+   <script>
+      function submitForm() {
+         alert("Message sent!");
+      }
+    </script>
+     
 
 
-  <script>
+  <!--<script>
 LottieInteractivity.create({
           player:'#lottieOne',
     mode:"scroll",
@@ -358,12 +359,8 @@ LottieInteractivity.create({
               ]
             });
   </script>
-    <script>
-      function submitForm() {
-         alert("Message sent!");
-      }
-    </script>
-     
+-->
+ 
 
   </body>
 </html>

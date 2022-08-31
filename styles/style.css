@@ -3,12 +3,6 @@
   --default-padding: 10px 10px 0;
   --all-sides-margin: 4px;
 }
-@include media-breakpoint-up(sm) {
-  .hero-hello-txt {
-    display: block;
-    justify-content: start;
-  }
-}
 
 body {
   margin: var(--all-sides-margin);
@@ -80,13 +74,8 @@ section {
   text-align: justify;
 }
 
-.hero-hello-txt {
-  text-align: center;
-}
-
 .lottieOne {
-  max-height: 100%;
-  display: inline-block;
+  display: flex;
   justify-content: center;
   margin: var(--all-sides-margin);
 }
@@ -98,7 +87,6 @@ section {
   padding: var(--default-padding);
 }
 .hola {
-  text-align: start;
   font-family: "Cabin", sans-serif;
   font-weight: 600;
   font-size: 56px;
@@ -110,7 +98,6 @@ section {
   font-weight: regular;
   line-height: 40px;
   max-width: 640px;
-  text-align: start;
 }
 .col-sm {
   margin: var(--default-margin);
@@ -145,8 +132,17 @@ section {
 }
 
 #card-project {
+  box-shadow: -4px 4px 6px rgb(150, 165, 165);
   border: solid 1px #515fd5;
+  border-radius: 24px;
   margin: var(--all-sides-margin);
   margin-top: 24px;
   padding: var(--default-padding);
+}
+
+@media (max-width: 800px) {
+  .hero-hello-txt {
+    display: inline-block;
+    justify-content: center;
+  }
 }
