@@ -3,6 +3,12 @@
   --default-padding: 10px 10px 0;
   --all-sides-margin: 4px;
 }
+@include media-breakpoint-up(sm) {
+  .hero-hello-txt {
+    display: block;
+    justify-content: start;
+  }
+}
 
 body {
   margin: var(--all-sides-margin);
@@ -46,9 +52,9 @@ section {
 .card {
   margin: var(--all-sides-margin);
 }
+
 .container {
   margin: var(--default-margin);
-  text-align: center;
 }
 .carousel-item {
   text-align: center;
@@ -65,10 +71,19 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.focus-area-txt {
+  text-align: center;
+}
 .form-label {
   margin: var(--default-margin);
   text-align: justify;
 }
+
+.hero-hello-txt {
+  text-align: center;
+}
+
 .lottieOne {
   max-height: 100%;
   display: inline-block;
@@ -123,4 +138,15 @@ section {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 1s linear;
+}
+
+.section-title {
+  text-align: center;
+}
+
+#card-project {
+  border: solid 1px #515fd5;
+  margin: var(--all-sides-margin);
+  margin-top: 24px;
+  padding: var(--default-padding);
 }
