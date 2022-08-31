@@ -140,6 +140,10 @@ section {
   padding: var(--default-padding);
 }
 
+#contact-form {
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .hero-hello-txt {
     display: inline-block;
